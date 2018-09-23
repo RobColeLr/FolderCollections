@@ -1,0 +1,206 @@
+/**
+ *		sitewide.css
+ *			- define standard layout and styles.
+**/
+
+/**********************************************************************************************
+	H T M L   T A G S
+***********************************************************************************************/	
+
+html {
+	margin-top:-8px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+body {
+	background-color:#B5AD95;
+	background-image:url(/web/20150121072936im_/http://robcole.com/Rob/_common/images/bg_stone-flipped_240dpi_1421x1413.gif);
+	background-repeat:repeat;
+	background-position:top;
+	color:#001100;
+	font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size:small;
+	text-align:center;
+}
+
+th {
+	text-align:left;
+	font-size:small;
+}
+
+td {
+	vertical-align:top;
+	font-size:small;
+}
+
+/* Same as pagetitle class */
+h1 {
+	font-size: x-large;
+}
+
+/* Same as subtitle class */
+h2 {
+	font-size: large;
+}
+
+h3 {
+	font-size: medium;
+}
+
+
+
+
+/**********************************************************************************************
+	C L A S S   S E L E C T O R S
+***********************************************************************************************/	
+
+.header_style { 
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	width:807px;
+}
+
+.main_style {
+	margin-left:auto;
+	margin-right:auto;
+	text-align:left;
+	width:800px;
+	font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size:small;
+}
+
+.help {
+	background-color:#FFFFCC;
+	border-style:solid;
+	border-color:#CCCCCC;
+	border-width:thin;
+}
+
+.small {
+	font-size:smaller;
+}
+
+
+/**
+ *  Form fields
+**/
+.required {
+	font-weight:bold;
+}
+.maybe_required {
+	font-style:italic;
+}
+.optional {
+}
+.form_error {
+	color:#980000;
+}
+
+/**
+ *  Alert messages.
+**/
+.info {
+ 	color:#336633;
+}
+.warning {
+ 	color:#FFFF00
+}
+.error {
+ 	color:#FF3300;
+}
+
+/**
+ *	Page (main-body) fonts.
+**/
+
+.pagetitle {
+	font-size: x-large;
+}
+
+.subtitle {
+	font-size: large;
+}
+
+.question {
+	color: #990000;
+}
+.answer {
+	color: #336600;
+}
+
+
+
+/**
+ *  Header/Footer support
+**/
+
+.nav_bar {
+	background-color:#333366;
+	background-position:center;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	width:800px;
+}
+
+.page_selected {
+	color:#666666;
+}
+
+.page_unselected {
+	color:#9999CC;
+	text-decoration:none;
+}
+
+
+
+/**********************************************************************************************
+	I D   S E L E C T O R S
+***********************************************************************************************/	
+
+#main_backbround {
+	position:absolute;
+	z-index:0;
+	left:0px;
+	top:0px;
+}
+
+/* ###1 Change to header-city-state and add vertical-align:bottom; */
+#logo {
+	font:18px georgia;
+	color: #CC3300;
+	line-height:24px;
+	letter-spacing:.4em;
+	}
+
+/* ###1 Change to header-country and add vertical-align:top; */
+.tagline {
+	font:12px georgia;
+	color: #CC3300;
+	line-height:18px;
+	letter-spacing:.4em;
+	}
+
+/*
+     FILE ARCHIVED ON 07:29:36 Jan 21, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 03:46:24 Sep 23, 2018.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 45.799 (3)
+  esindex: 0.008
+  captures_list: 62.747
+  CDXLines.iter: 11.528 (3)
+  PetaboxLoader3.datanode: 48.944 (4)
+  exclusion.robots: 0.232
+  exclusion.robots.policy: 0.218
+  RedisCDXSource: 2.082
+  PetaboxLoader3.resolve: 29.872
+  load_resource: 42.097
+*/

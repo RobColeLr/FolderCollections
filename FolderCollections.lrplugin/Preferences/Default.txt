@@ -1,0 +1,29 @@
+--[[
+        Plugin configuration file (aka 'Advanced Settings').
+        
+        Note: Named members of return table are accessible in source code as:
+        
+            app:getPref( name )
+            
+            provided there is no app:initPref( name, val ) or app:setPref( name, val ) statements executed prior,
+            which hide/override the named members in this file.
+--]]
+
+
+-- declare return table
+local _t = {}
+
+
+
+--[[
+        *** Instructions:
+        
+        Set to true if you always leave lib filters locked (so they're applied globally to all sources, instead of on a per-source basis).
+        Stack mirroring of multiple sources will be slightly faster when this is true.
+--]]
+_t.assumeGlobalLibFilter = false
+
+
+
+-- return config table
+return _t

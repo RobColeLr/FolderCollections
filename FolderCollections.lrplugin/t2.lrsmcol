@@ -1,0 +1,15 @@
+s = {
+	id = "C6DEE55A-EF9A-4C56-A093-B6B6F6C388DA",
+	internalName = "t2",
+	title = "t2",
+	type = "LibrarySmartCollection",
+	value = {
+		{
+			criteria = "metadataStatus",
+			operation = "==",
+			value = "upToDate",
+		},
+		combine = "intersect",
+	},
+	version = 0,
+}

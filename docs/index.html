@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2018-09-22" />
+  <title>robcole.com - FolderCollections</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="https://ickc.github.io/markdown-latex-css/css/common.css">
+  <link rel="stylesheet" href="https://ickc.github.io/markdown-latex-css/fonts/fonts.css">
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header>
+<h1 class="title">robcole.com - FolderCollections</h1>
+<p class="date">September 22, 2018</p>
+</header>
+<nav id="TOC">
+<ul>
+<li><a href="#robcole.com---foldercollections"><span class="toc-section-number">1</span> robcole.com - FolderCollections</a></li>
+</ul>
+</nav>
+<h1 id="robcole.com---foldercollections"><span class="header-section-number">1</span> robcole.com - FolderCollections</h1>
+<p>Folder Collections - Lightroom Plugin</p>
+<p>Makes a set of collections that mirror your folders so you can access in Develop Module.</p>
+<p>Featuring:</p>
+<ul>
+<li><strong>Synchronizes automatically during startup</strong>, and automatically or manually after startup.</li>
+<li><strong>Stacks in folder collections can match stacks in folders proper</strong> (this feature is deprecated: functionality replaced with a more robust implementation in <a href="https://web.archive.org/web/20150206152934/http%3A/www.robcole.com/Rob/ProductsAndServices/StackerLrPlugin">Stacker</a>)</li>
+</ul>
+<h3 id="system-requirements"><span class="header-section-number">1.0.1</span> System Requirements</h3>
+<ul>
+<li><strong>Lightroom 5 or 4: All features.</strong></li>
+<li><strong>Lightroom 3: Stack matching won’t work.</strong></li>
+<li><strong>Only tested in Windows so far (Lr4 and Lr5), but (except for stack matching) should work on Mac too.</strong></li>
+</ul>
+<p>Quick Links (intra-page)</p>
+<p><a href="https://web.archive.org#background">Background Information</a><br />
+<a href="https://web.archive.org#screenshots">Screenshots</a><br />
+<a href="https://web.archive.org#howtouse">How to Use</a><br />
+<a href="https://web.archive.org#faq">Folder Collections FAQ (Frequently Asked Questions)</a><br />
+<a href="https://web.archive.org#revision_history">Revision History</a><br />
+<a href="https://web.archive.org#download">Download</a></p>
+<p><em><strong>See the readme file after downloading for usage and other notes.</strong></em></p>
+<hr />
+<h3 id="folder-collections---screenshots"><span class="header-section-number">1.0.2</span> Folder Collections - Screenshots</h3>
+<p>File Menu -&gt; Plugin Extras<br />
+<img src="https://web.archive.org/web/20150206152934im_/http%3A/www.robcole.com/Rob/ProductsAndServices/_support/file_menu.gif" /><br />
+Common functions are accessed via the file menu.</p>
+<p>Plugin Manager</p>
+<p><img src="https://web.archive.org/web/20150206152934im_/http%3A/www.robcole.com/Rob/ProductsAndServices/FolderCollectionsLrPlugin/_support/plugin_manager.gif" /></p>
+<h3 id="backgroundintroduction"><span class="header-section-number">1.0.3</span> Background/Introduction</h3>
+<p>I got nuthin’…</p>
+<h3 id="definitions-for-the-purposes-of-folder-collections"><span class="header-section-number">1.0.4</span> Definitions (for the purposes of Folder Collections)</h3>
+<h3 id="how-to-use-folder-collections"><span class="header-section-number">1.0.5</span> How to Use Folder Collections</h3>
+<p>- Install (see readme file in downloaded zip file)<br />
+- <a href="https://web.archive.org#config">Configure in plugin manager</a><br />
+- <a href="https://web.archive.org#file_menu">File Menu</a></p>
+<h3 id="plugin-manager-configuration"><span class="header-section-number">1.0.6</span> Plugin Manager Configuration</h3>
+<p>See <a href="https://web.archive.org/web/20150206152934/http%3A/www.robcole.com/Rob/ProductsAndServices/ElarePluginFramework">elare plugin framework</a> for <strong>common settings</strong>.</p>
+<p><strong>Additional Settings and Controls</strong></p>
+<div class="line-block">—– |<br />
+Auto-processing control | Checked: select folder collections will be kept synchronized to source folders. Unchecked: manual sync would be required. This is recommended - it’s more convenient, works well, and requires very few CPU cycles. |<br />
+Auto-sync collection sets | Checked: Parental folder collection sets will be kept synchronized to parental source folders. Unchecked: manual sync required if need be. It is not recommended to check this since it can result in lengthy repetitive calculations that are usually not necessary. If you do decide to check this, just be sure not to select top-level folder collections unless it is your intention to have them constantly synchronized - this could be useful, but normally isn’t. |<br />
+Auto-check status | Status of auto-processing/sync. |<br />
+  | |<br />
+Update Folder Collections | Updates entire tree of folder collections. |<br />
+Report | Compares folders to folder collections and provides info. |<br />
+  | |</div>
+<h3 id="file-menu"><span class="header-section-number">1.0.7</span> File Menu</h3>
+<p>Access via Lightroom’s menu bar: File Menu -&gt; Plugin Extras</p>
+<div class="line-block">—– |<br />
+Sync Selected Sources | Updates folder collections to mirror corresponding folders. This can be used instead of auto-sync after restructuring folders. Only synchronizes the selected folder collection sources. - to update whole tree, use plugin manager. |<br />
+Go To Folders | Convenience function which selects the “real” folders corresponding to selected folder collections, in case you need to use the “real” folders to move physical files around, which can’t be done from the folder collections. |<br />
+Rebuild Stacks |</div>
+<p>*** Deprecated - consider using <a href="https://web.archive.org/web/20150206152934/http%3A/www.robcole.com/Rob/ProductsAndServices/StackerLrPlugin">Stacker</a> instead.</p>
+<p>Will stack photos in folder collections to match corresponding folders. Operates on selected folder collections and/or sets, recursively - unstacks, then restacks.</p>
+<p>|<br />
+| Update Stacks |</p>
+<p>*** Deprecated - consider using <a href="https://web.archive.org/web/20150206152934/http%3A/www.robcole.com/Rob/ProductsAndServices/StackerLrPlugin">Stacker</a> instead.</p>
+<p>Like ‘Rebuild Stacks’, except ignores pre-existing stacks, thus just picking up new stacks in folders without disturbing existing folder collection stacks.</p>
+<p>|</p>
+<hr />
+<h3 id="folder-collections-faq-frequently-asked-questions"><span class="header-section-number">1.0.8</span> Folder Collections FAQ (Frequently Asked Questions)</h3>
+<h4 id="no-particular-order"><span class="header-section-number">1.0.8.1</span> (no particular order)</h4>
+<hr />
+<p>These FAQs come partly from users, and partly from my imagination. Please let me know if there are errors or omissions in this FAQ - thanks.</p>
+<p>NOTE: The following Q&amp;A’s assume that the plugin is working as I expect… If, after your best effort, still “no go”, please let me know.</p>
+<hr />
+<p>Question: Why would I ever need or want such a thing as Folder Collections?</p>
+<p>Answer: If folders are your primary unit of photo organization, and you spend a lot of time in the Develop Module, folder collections can be a welcome convenience, since you don’t have to switch back to Library module just to select a different folder.</p>
+<hr />
+<p>Question: Why would I not want to use Folder Collections?</p>
+<p>Answer: If folders are just buckets and your primary unit of organization is collections which you already have set up, then Folder Collections probably won’t be of much value to you.</p>
+<hr />
+<p>Question: I deleted a file, but it reappeared…(?)</p>
+<p>Answer: It’s easy to forget the folder collections are not folders - and the selected folder is usually being automatically sync’d with the true folder. While in folder collection, to permanently delete (from folder collection and true folder), use Ctrl-Shift-Alt-Delete (Windows) or the Mac equivalent. * * *</p>
+<p>Question: What’s this [folder] collection?</p>
+<p>Answer: Unlike folders, which can include photos or other folders, collection sets can’t contain photos. So, instead photos corresponding to parental folders are put into a child collection of the same name as the parent, except with <a href="#section"></a> around it, to distinguish.</p>
+<hr />
+<p>Question: How do you mirror folder stacks in folder collections?</p>
+<p>Answer: Using AutoHotkey in Windows. This has the potential to be problematic. I use this feature regularly, but please let me know if you have problems, OK?</p>
+<hr />
+<p>Question: Any other hot tips I should know about?</p>
+<p>Answer: Yes:</p>
+<ul>
+<li>Use Ctrl-Shift-Alt-Delete (Windows) or the Mac equivalent to delete a photo or virtual copy while viewing a folder collection. * * *</li>
+</ul>
+<p>Question: What are the limitations of Folder Collections and what are your plans for the future?</p>
+<p>Answer:</p>
+<ul>
+<li>I was hoping to use smart collections so Lightroom would handle auto-updating, but no way to do it given limitation of smart collection criteria. Thus plugin handles auto-updating instead. Since usually people will follow recommendation and not enable auto-sync of parent collection sets, those need to be synchronized manually (or full update), after source folders are restructured.</li>
+<li>Stack mirroring leaves something to be desired (and <span class="citation" data-cites="2012-06-01">@2012-06-01</span>, only works on Windows) - it works OK for me (I sometimes have to dismiss one or two Lightroom errors in the course of doing a whole catalog rebuild or update), but is a clunky kluge implemented as such to work around inadequate support for doing it “right”.</li>
+<li>There are still some minor but annoying bugs in v2.0.1 I’m trying to work out, having to do with the conversion of a collection to a collection set (e.g. auto-sync, when folders have been added to previously un-foldered folder), and such stuff - do standby… * * *</li>
+</ul>
+<h3 id="folder-collections-revision-history"><span class="header-section-number">1.0.9</span> Folder Collections Revision History</h3>
+<p>(reverse chronological order)</p>
+<p><strong>Version 2.2.8 released 2015-01-17</strong></p>
+<p>- Removed stack functions from file menu (plugin extras) in Mac environment.</p>
+<p><strong>Version 2.2.7 released 2014-07-31</strong></p>
+<p>- Fixed bug: Lr5.6 compatibility fix - critical.</p>
+<p><strong>Version 2.2.5 released 2014-06-03</strong></p>
+<p>- Tried to get it work with Lr mobile folders too, but could not succeed due to a bug in Lightroom - sorry. At least it won’t go belly up now (all other folders should work as intended).</p>
+<p>**********Version 2.2.4 released 2014-05-31**</p>
+<p>- Continuation of fix that will hopefully allow users with photos on unmapped windows network drives (e.g. real network drives or folders created on behalf of Lightroom Mobile which mimick network drives) to use it too - let me know if I’m right (or wrong) - thanks.</p>
+<p><strong>Version 2.2.3 released 2014-05-31</strong></p>
+<p>- Made a fix that will hopefully allow users with photos on unmapped windows network drives to use it too - let me know if I’m right (or wrong) - thanks.</p>
+<p><strong>Version 2.2.2 released 2014-03-30</strong></p>
+<p>- Fixed so if plugin is disabled, it won’t initialize (populate + review). The way it was before, ya had to remove the dang thang to de-activate it for testing purposes..</p>
+<p><strong>Version 2.2.1 released 2013-09-14</strong></p>
+<p>- Better error message for case when root drive is being shown as parent in folder pane, which it should not be.</p>
+<p><strong>Version 2.2 released 2013-09-13</strong></p>
+<p>- Fixed bug: Stack mirroring upon startup was only working if Lr started up in grid mode. I wish somebody told me about this bug. It’s been there for a long time, but I didn’t notice it because I use Stacker for mirroring folder stacks in collections, and so hadn’t exercised the Folder Collection stacking feature in a long time. If I don’t know about ’em, I can’t fix ’em…</p>
+<p>- Also, stack mirroring upon startup is now cancelable with impunity (stacks of course will not all have been built/updated).</p>
+<p>- Fixed bug whose symptom was error: “type() is nil…” or something to that effect.</p>
+<p><strong>Version 2.1.2, released 2013-03-27</strong></p>
+<p>- Fixed bug: was not working when photos in catalog were in root of drive (as opposed to being in a folder).</p>
+<p>******************************Version 2.1.1, released 2013-02-24**</p>
+<p>- Fixed a subtle bug in catalog updating method which may have been responsible for initialization errors, especially when building folder collections for the first time.</p>
+<p><strong>Version 2.1, released 2011-06-04</strong></p>
+<p>- Fairly extensive changes, mostly targeted at working around bugs in Lightroom/SDK, mostly impact auto-sync when folders have been moved or renamed…</p>
+<p>- Report function scrutinizes much more thoroughly than before, to catch any discrepancy between folders and the folder collections that represent them.</p>
+<p><strong>Version 2.0.1, released 2011-06-01</strong></p>
+<p>- Added stack mirroring (Windows only at the moment). Note: will not work on systems that don’t use English keyboard keystrokes for selecting photos, and stacking/unstacking/collapsing/and grouping stacks, i.e. ctrl-a, alt-p-a-u, alt-p-a-c, and alt-p-a-g, respectively.</p>
+<p><strong>Version 2.0, released 2011-05-31</strong></p>
+<p>- Added stack mirroring (Windows only at the moment). Note: will not work on systems that don’t use English keyboard keystrokes for selecting photos, and stacking/unstacking/collapsing/and grouping stacks, i.e. ctrl-a, alt-p-a-u, alt-p-a-c, and alt-p-a-g, respectively.</p>
+<p><strong>Version 1.2, released 2011-05-29</strong></p>
+<p>- Automatically performs independent integrity check and validation after re-building and/or updating folder collections.</p>
+<p>- Modified to incorporate enhancements in recently released Lr4.1 SDK.</p>
+<p><strong>Version 1.1.1, released 2011-05-28</strong></p>
+<p>- Fixed problem when loading plugin into an empty catalog, there was an error message being displayed.</p>
+<p>- Fixed problem when root of catalog folder was not root of drive - symptom was disappearing folder collection upon sync.</p>
+<p><strong>Version 1.1, released 2011-05-26</strong></p>
+<p>- Misc enhancements &amp; a few bug fixes, mostly having to do with auto-mirroring.</p>
+<p><strong>Version 1.0, released 2011-05-25</strong></p>
+<p>- Initial release. * * *</p>
+<h4 id="section"><span class="header-section-number">1.0.9.1</span> </h4>
+<h4 id="please-identify-the-plugin-let-me-know-what-you-think13-and-please-identify-the-plugin-report-bugs14."><span class="header-section-number">1.0.9.2</span> Please (IDENTIFY THE PLUGIN) <a href="https://web.archive.org/web/20150206152934/http%3A/www.robcole.com/Rob/ContactMe">let me know what you think</a>, and please (IDENTIFY THE PLUGIN) <a href="https://web.archive.org/web/20150206152934/http%3A/www.robcole.com/Rob/ProblemReport">report bugs</a>.</h4>
+<h3 id="download"><span class="header-section-number">1.0.10</span> Download</h3>
+<p><em>acceptance of Download Terms &amp; Conditions will be required</em></p>
+<p><a href="/web/20150206152934/http://www.robcole.com/Rob/_common/DownloadEasy/Download.cfm?dir=FolderCollectionsLrPlugin&amp;file=rc_FolderCollections_(lrplugin)_2.2.8.zip">Folder Collections 2.2.8</a> - Latest &amp; greatest: this is the one to download.</p>
+<p><a href="/web/20150206152934/http://www.robcole.com/Rob/_common/DownloadEasy/Download.cfm?dir=FolderCollectionsLrPlugin&amp;file=rc_FolderCollections_(lrplugin)_2.2.7.zip">Folder Collections 2.2.7</a> - A previous version, in case of problem with latest.</p>
+</body>
+</html>

@@ -1,0 +1,15 @@
+s = {
+	id = "9852E2D2-616D-4290-BB8A-AB92A54831E9",
+	internalName = "t3",
+	title = "t3",
+	type = "LibrarySmartCollection",
+	value = {
+		{
+			criteria = "folder",
+			operation = "==",
+			value = "X:\\MyPictures\\Personal To Rob\\1970s 3 Late\\Aaron Dean Cole",
+		},
+		combine = "intersect",
+	},
+	version = 0,
+}

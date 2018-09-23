@@ -1,0 +1,22 @@
+s = {
+	id = "13CDD041-C01A-4591-AB29-1BF36DB95697",
+	internalName = "t",
+	title = "t",
+	type = "LibrarySmartCollection",
+	value = {
+		{
+			criteria = "folder",
+			operation = "beginsWith",
+			value = "asdf",
+			value2 = "",
+		},
+		{
+			criteria = "folder",
+			operation = "endsWith",
+			value = "asdf",
+			value2 = "",
+		},
+		combine = "intersect",
+	},
+	version = 0,
+}
